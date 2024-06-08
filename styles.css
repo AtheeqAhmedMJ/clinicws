@@ -209,17 +209,4 @@ select {
 footer {
     margin-top: auto;
 }
-
-.Signature {
-    margin: 1cm;
-    height: 3cm; /* Adjust height for signature area */
-    width: 5cm;
-    border: 1px solid #ccc; /* Border for the signature area */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #8d8989b6;
-    margin-left: auto;
-}
+
