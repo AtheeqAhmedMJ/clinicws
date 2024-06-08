@@ -1,0 +1,728 @@
+{
+  "medications": [
+  {
+    "name": "1 AL 10",
+    "category": "Tab"
+  },
+  {
+    "name": "1 AL 5",
+    "category": "Tab"
+  },
+  {
+    "name": "Accuglim MP1",
+    "category": "Tab"
+  },
+  {
+    "name": "Accuglim MP2",
+    "category": "Tab"
+  },
+  {
+    "name": "Aciloc 150",
+    "category": "Tab"
+  },
+  {
+    "name": "Aciloc 300",
+    "category": "Tab"
+  },
+  {
+    "name": "Action 500",
+    "category": "Tab"
+  },
+  {
+    "name": "Alcid MPS",
+    "category": "Syrup"
+  },
+  {
+    "name": "Almox 250",
+    "category": "Tab"
+  },
+  {
+    "name": "Almox 500",
+    "category": "Tab"
+  },
+  {
+    "name": "Amifru 40",
+    "category": "Tab"
+  },
+  {
+    "name": "Amlip AT",
+    "category": "Tab"
+  },
+  {
+    "name": "Amlog 10",
+    "category": "Tab"
+  },
+  {
+    "name": "Amlong 2.5",
+    "category": "Tab"
+  },
+  {
+    "name": "Amlong 20",
+    "category": "Tab"
+  },
+  {
+    "name": "Amlox 500",
+    "category": "Tab"
+  },
+  {
+    "name": "Amlokind AT",
+    "category": "Tab"
+  },
+  {
+    "name": "Amlokind",
+    "category": "Tab"
+  },
+  {
+    "name": "Amodep AT",
+    "category": "Tab"
+  },
+  {
+    "name": "Amox 500",
+    "category": "Tab"
+  },
+  {
+    "name": "Amoxicillin (Cap)",
+    "category": "Cap"
+  },
+  {
+    "name": "Ambrodil S",
+    "category": "Syrup"
+  },
+  {
+    "name": "Ambrodil",
+    "category": "Syrup"
+  },
+  {
+    "name": "Angicam Beta",
+    "category": "Tab"
+  },
+  {
+    "name": "Atarax 25",
+    "category": "Tab"
+  },
+  {
+    "name": "Aten 10",
+    "category": "Tab"
+  },
+  {
+    "name": "Aten 20",
+    "category": "Tab"
+  },
+  {
+    "name": "Aten 25",
+    "category": "Tab"
+  },
+  {
+    "name": "Atmol 500",
+    "category": "Tab"
+  },
+  {
+    "name": "Atmol MR",
+    "category": "Tab"
+  },
+  {
+    "name": "Atmol P",
+    "category": "Tab"
+  },
+  {
+    "name": "Atmol SR",
+    "category": "Tab"
+  },
+  {
+    "name": "Augmentin",
+    "category": "Cap"
+  },
+  {
+    "name": "Azax 250",
+    "category": "Tab"
+  },
+  {
+    "name": "Azax 500",
+    "category": "Tab"
+  },
+  {
+    "name": "Azee 250",
+    "category": "Tab"
+  },
+  {
+    "name": "Azee 500",
+    "category": "Tab"
+  },
+  {
+    "name": "Azee Dry Syrup",
+    "category": "Syrup"
+  },
+  {
+    "name": "B.complex",
+    "category": "Cap"
+  },
+  {
+    "name": "Bactrin DS",
+    "category": "Tab"
+  },
+  {
+    "name": "Brufen 400",
+    "category": "Tab"
+  },
+  {
+    "name": "Bro-Zedex",
+    "category": "Syrup"
+  },
+  {
+    "name": "Calcium Syrup",
+    "category": "Syrup"
+  },
+  {
+    "name": "Calpol 120",
+    "category": "Syrup"
+  },
+  {
+    "name": "Calpol 250",
+    "category": "Syrup"
+  },
+  {
+    "name": "Calpol 500",
+    "category": "Tab"
+  },
+  {
+    "name": "Calpol 650",
+    "category": "Tab"
+  },
+  {
+    "name": "Candiforce 100",
+    "category": "Tab"
+  },
+  {
+    "name": "Candiforce 200",
+    "category": "Tab"
+  },
+  {
+    "name": "Cardivas 3.215",
+    "category": "Tab"
+  },
+  {
+    "name": "Ceflox 500",
+    "category": "Tab"
+  },
+  {
+    "name": "Citral K",
+    "category": "Tab"
+  },
+  {
+    "name": "Cipcal 500",
+    "category": "Tab"
+  },
+  {
+    "name": "Clavam 625",
+    "category": "Tab"
+  },
+  {
+    "name": "Clavam BID",
+    "category": "Syrup"
+  },
+  {
+    "name": "Clavam",
+    "category": "Syrup"
+  },
+  {
+    "name": "Combiflam",
+    "category": "Tab"
+  },
+  {
+    "name": "Cremafin Plus",
+    "category": "Syrup"
+  },
+  {
+    "name": "Cyclopam",
+    "category": "Tab"
+  },
+  {
+    "name": "Cyra D",
+    "category": "Cap"
+  },
+  {
+    "name": "Darolac Plus (Powder)",
+    "category": "Other"
+  },
+  {
+    "name": "Depin 5",
+    "category": "Tab"
+  },
+  {
+    "name": "Deriphyllin",
+    "category": "Tab"
+  },
+  {
+    "name": "Diapride M1",
+    "category": "Tab"
+  },
+  {
+    "name": "Diapride M2",
+    "category": "Tab"
+  },
+  {
+    "name": "Digoxin 25",
+    "category": "Tab"
+  },
+  {
+    "name": "Dolo 650",
+    "category": "Tab"
+  },
+  {
+    "name": "Dolokind MR",
+    "category": "Tab"
+  },
+  {
+    "name": "Dolokind Plus",
+    "category": "Tab"
+  },
+  {
+    "name": "Dolopar",
+    "category": "Tab"
+  },
+  {
+    "name": "Divon Plus",
+    "category": "Tab"
+  },
+  {
+    "name": "Dulcoflex",
+    "category": "Tab"
+  },
+  {
+    "name": "Dytor 10",
+    "category": "Tab"
+  },
+  {
+    "name": "Ecosprin 25",
+    "category": "Tab"
+  },
+  {
+    "name": "Ecosprin 50",
+    "category": "Tab"
+  },
+  {
+    "name": "Ecosprin AV 25",
+    "category": "Tab"
+  },
+  {
+    "name": "Ecosprin AV 50",
+    "category": "Tab"
+  },
+  {
+    "name": "Ecosprin AV 75",
+    "category": "Tab"
+  },
+  {
+    "name": "Eldoper",
+    "category": "Cap"
+  },
+  {
+    "name": "Enerzal Powder",
+    "category": "Tab"
+  },
+  {
+    "name": "Esofag D",
+    "category": "Cap"
+  },
+  {
+    "name": "Evion",
+    "category": "Cap"
+  },
+  {
+    "name": "Fluka 150",
+    "category": "Tab"
+  },
+  {
+    "name": "Febrex Plus",
+    "category": "Syrup"
+  },
+  {
+    "name": "Febrex Plus",
+    "category": "Tab"
+  },
+  {
+    "name": "Gelucil",
+    "category": "Syrup"
+  },
+  {
+    "name": "Gelusil",
+    "category": "Syrup"
+  },
+  {
+    "name": "Giftan HC",
+    "category": "Tab"
+  },
+  {
+    "name": "Glimestar M1",
+    "category": "Tab"
+  },
+  {
+    "name": "Glimestar M2",
+    "category": "Tab"
+  },
+  {
+    "name": "Glizid 80",
+    "category": "Tab"
+  },
+  {
+    "name": "Glycomet GP 1",
+    "category": "Tab"
+  },
+  {
+    "name": "Glycomet GP 2",
+    "category": "Tab"
+  },
+  {
+    "name": "Glycomet Trio 2",
+    "category": "Tab"
+  },
+  {
+    "name": "Glycomet-GP 3/850",
+    "category": "Tab"
+  },
+  {
+    "name": "Glynase MF",
+    "category": "Tab"
+  },
+  {
+    "name": "Grillnctus BM",
+    "category": "Syrup"
+  },
+  {
+    "name": "Grillnctus",
+    "category": "Syrup"
+  },
+  {
+    "name": "HCQS 200",
+    "category": "Tab"
+  },
+  {
+    "name": "HCQS 300",
+    "category": "Tab"
+  },
+  {
+    "name": "Hifenac 100",
+    "category": "Tab"
+  },
+  {
+    "name": "Hifenac D",
+    "category": "Tab"
+  },
+  {
+    "name": "Hifenac P",
+    "category": "Tab"
+  },
+  {
+    "name": "Ibuprofen",
+    "category": "Tab"
+  },
+  {
+    "name": "Ibugesic Plus",
+    "category": "Syrup"
+  },
+  {
+    "name": "Ketostar",
+    "category": "Syrup"
+  },
+  {
+    "name": "Macbery D",
+    "category": "Tab"
+  },
+  {
+    "name": "Macbery PD",
+    "category": "Tab"
+  },
+  {
+    "name": "Maxirich",
+    "category": "Cap"
+  },
+  {
+    "name": "Meftal Spas",
+    "category": "Syrup"
+  },
+  {
+    "name": "Monticope",
+    "category": "Syrup"
+  },
+  {
+    "name": "Mucusine",
+    "category": "Syrup"
+  },
+  {
+    "name": "Nicardia 10",
+    "category": "Tab"
+  },
+  {
+    "name": "Norflox T",
+    "category": "Tab"
+  },
+  {
+    "name": "Norflox TZ",
+    "category": "Tab"
+  },
+  {
+    "name": "Nutrolin B",
+    "category": "Syrup"
+  },
+  {
+    "name": "Nutrolin B",
+    "category": "Tab"
+  },
+  {
+    "name": "Nurokind RF",
+    "category": "Cap"
+  },
+  {
+    "name": "Omez D",
+    "category": "Cap"
+  },
+  {
+    "name": "Omez",
+    "category": "Cap"
+  },
+  {
+    "name": "Omee D",
+    "category": "Cap"
+  },
+  {
+    "name": "Omee",
+    "category": "Cap"
+  },
+  {
+    "name": "ORS",
+    "category": "Tab"
+  },
+  {
+    "name": "ORS POWDER",
+    "category": "Tab"
+  },
+  {
+    "name": "Ondem",
+    "category": "Tab"
+  },
+  {
+    "name": "Livofloxin",
+    "category": "Tab"
+  },
+  {
+    "name": "P-100",
+    "category": "Syrup"
+  },
+  {
+    "name": "P-250",
+    "category": "Syrup"
+  },
+  {
+    "name": "P-50",
+    "category": "Syrup"
+  },
+  {
+    "name": "Pan 20",
+    "category": "Cap"
+  },
+  {
+    "name": "Pan 40",
+    "category": "Cap"
+  },
+  {
+    "name": "Pan DSR",
+    "category": "Cap"
+  },
+  {
+    "name": "Paracip",
+    "category": "Syrup"
+  },
+  {
+    "name": "Paracetamol (Tab)",
+    "category": "Tab"
+  },
+  {
+    "name": "Pregabanyl NT",
+    "category": "Tab"
+  },
+  {
+    "name": "Rab DSR",
+    "category": "Cap"
+  },
+  {
+    "name": "Rabeprozol DSR",
+    "category": "Cap"
+  },
+  {
+    "name": "Rabekind DSR",
+    "category": "Cap"
+  },
+  {
+    "name": "Rantac 150",
+    "category": "Tab"
+  },
+  {
+    "name": "Rantac 300",
+    "category": "Tab"
+  },
+  {
+    "name": "Rantac D",
+    "category": "Tab"
+  },
+  {
+    "name": "Rantac",
+    "category": "Syrup"
+  },
+  {
+    "name": "RB Heal D",
+    "category": "Tab"
+  },
+  {
+    "name": "Rexperia Forte",
+    "category": "Tab"
+  },
+  {
+    "name": "Rosuvas",
+    "category": "Tab"
+  },
+  {
+    "name": "Saridon",
+    "category": "Tab"
+  },
+  {
+    "name": "Sinerest RF",
+    "category": "Syrup"
+  },
+  {
+    "name": "Sinerest RF",
+    "category": "Tab"
+  },
+  {
+    "name": "Sinerest",
+    "category": "Syrup"
+  },
+  {
+    "name": "Sinerest",
+    "category": "Tab"
+  },
+  {
+    "name": "Sumo Cold",
+    "category": "Tab"
+  },
+  {
+    "name": "Sumo",
+    "category": "Tab"
+  },
+  {
+    "name": "Taxim O",
+    "category": "Syrup"
+  },
+  {
+    "name": "Taxim O",
+    "category": "Tab"
+  },
+  {
+    "name": "Taxin 200",
+    "category": "Tab"
+  },
+  {
+    "name": "Theo Asthalin",
+    "category": "Tab"
+  },
+  {
+    "name": "TusQ DS",
+    "category": "Tab"
+  },
+  {
+    "name": "TusQ DX",
+    "category": "Syrup"
+  },
+  {
+    "name": "Ultra 3D",
+    "category": "Syrup"
+  },
+  {
+    "name": "Urisoft",
+    "category": "Tab"
+  },
+  {
+    "name": "Urispas",
+    "category": "Tab"
+  },
+  {
+    "name": "Urikind K",
+    "category": "Syrup"
+  },
+  {
+    "name": "Vasograin",
+    "category": "Tab"
+  },
+  {
+    "name": "Vipocaps",
+    "category": "Cap"
+  },
+  {
+    "name": "Vertistar MD 8",
+    "category": "Tab"
+  },
+  {
+    "name": "Voglistar MD 0.3",
+    "category": "Tab"
+  },
+  {
+    "name": "VOGS GM 1",
+    "category": "Tab"
+  },
+  {
+    "name": "VOGS GM 2",
+    "category": "Tab"
+  },
+  {
+    "name": "Vomikind M D 4",
+    "category": "Tab"
+  },
+  {
+    "name": "Vomikind MD",
+    "category": "Tab"
+  },
+  {
+    "name": "Zerodol SP",
+    "category": "Tab"
+  },
+  {
+    "name": "Zifi 100 DT",
+    "category": "Tab"
+  },
+  {
+    "name": "Zifi 200",
+    "category": "Tab"
+  },
+  {
+    "name": "Zifi 500",
+    "category": "Tab"
+  },
+  {
+    "name": "Zincovit",
+    "category": "Tab"
+  },
+  {
+    "name": "Zolafresh ODT",
+    "category": "Tab"
+  },
+  {
+    "name": "Zukanorm M 500",
+    "category": "Tab"
+  },
+  {
+    "name": "Asthalin Respules",
+    "category": "Tab"
+  },
+  {
+    "name": "Duolin Respules",
+    "category": "Tab"
+  },
+  {
+    "name": "Budecort Respules",
+    "category": "Tab"
+  },
+  {
+    "name": "Livolin Respules",
+    "category": "Tab"
+  }
+  ]
+}

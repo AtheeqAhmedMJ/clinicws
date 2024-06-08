@@ -1,0 +1,225 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.prescription-container {
+    width: 21cm; /* Adjusted width for A4 size */
+    margin: 0 auto;
+    padding: 1cm;
+    min-height: 28.5cm; /* Setting minimum height to A4 height */
+    position: relative;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Visible border for A4 sheet */
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.1cm;
+}
+
+.footer-image {
+    width: 100%;
+    height: auto;
+    margin-top: 0.1cm;
+    margin-bottom: 0.1cm;
+}
+
+.patient-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1cm;
+    margin-bottom: 0.5cm;
+}
+
+.name-box {
+    flex: 5.5; /* Increased size for the name box */
+    margin-right: 0.5cm;
+}
+
+.detail-inline {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%; /* Ensure inline details take full width */
+}
+
+.inline-box {
+    flex: 2;
+    margin-bottom: 0.6cm;
+}
+
+.detail-box {
+    flex: 1 1 30%;
+    margin-bottom: 0.5cm;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.2cm;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: calc(100% - 0.6cm);
+    padding: 0.3cm;
+    margin-bottom: 0.3cm;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.styled-button {
+    padding: 0.5cm 0.75cm;
+    font-size: 0.9em;
+    cursor: pointer;
+    background-color: #14828a;
+    color: white;
+    border: none;
+    border-radius: 18px;
+}
+
+#medications-list {
+    margin-bottom: 0.75cm;
+}
+
+.medication-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 0.3cm;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 0.2cm;
+}
+
+.medication-item span {
+    flex: 1;
+    margin: 0 0.2cm;
+}
+
+.delete-button {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    font-size: 1em;
+    display: inline-block;
+}
+
+@media print {
+    .medication-details,
+    .styled-button,
+    .delete-button {
+        display: none;
+    }
+
+    .prescription-container {
+        border: none; /* Hide border when printing */
+    }
+
+    .footer-note {
+        display: none;
+    }
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: calc(100% - 2px);
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    z-index: 1;
+    max-height: 200px;
+    overflow-y: auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.medication-box {
+    position: relative;
+}
+
+.medication-inline {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5cm;
+}
+
+.medication-inline .medication-box {
+    flex: 1;
+    margin-right: 1cm; /* Added
+    /* Adjusted space between type box and search box */
+}
+
+.medication-inline .medication-box:last-child {
+    margin-right: 0;
+}
+
+.footer-note {
+    text-align: center;
+    font-size: 15px;
+    color: #868181;
+    margin-top: 0.5cm;
+}
+
+/* Decrease size of type box */
+#medication-type {
+    width: 4cm;
+}
+
+#medication {
+    width: 13cm;
+}
+
+/* Ensure footer is always at the bottom */
+.prescription-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.Signature {
+    margin: 1cm;
+    height: 3cm; /* Adjust height for signature area */
+    width: 5cm;
+    border: 1px solid #ccc; /* Border for the signature area */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #8d8989b6;
+    margin-left: auto;
+}
