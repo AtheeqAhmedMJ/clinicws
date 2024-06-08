@@ -55,9 +55,10 @@ function addMedication() {
     let medication = document.getElementById('medication').value;
     let dosage = document.getElementById('dosage').value;
     let duration = document.getElementById('duration').value;
+    let quantity = document.getElementById('quantity').value;
     let food = document.getElementById('food').value;
 
-    if (medication && dosage && duration && food) {
+    if (medication && dosage && duration && quantity && food) {
         let medicationsList = document.getElementById('medications-list');
 
         let medicationItem = document.createElement('div');
@@ -75,6 +76,9 @@ function addMedication() {
         let durationSpan = document.createElement('span');
         durationSpan.textContent = `${duration}`;
 
+        let quantitySpan = document.createElement('span');
+        quantitySpan.textContent = `x ${quantity}`;
+
         let foodSpan = document.createElement('span');
         foodSpan.textContent = `${food}`;
 
@@ -89,6 +93,7 @@ function addMedication() {
         medicationItem.appendChild(medSpan);
         medicationItem.appendChild(doseSpan);
         medicationItem.appendChild(durationSpan);
+        medicationItem.appendChild(quantitySpan);
         medicationItem.appendChild(foodSpan);
         medicationItem.appendChild(deleteButton);
 
@@ -98,6 +103,8 @@ function addMedication() {
         document.getElementById('medication').value = '';
         document.getElementById('dosage').value = '';
         document.getElementById('duration').value = '';
+        document.getElementById('quantity').value = '';
+        document.getElementById('food').value = '';
     }
 }
 
@@ -105,4 +112,3 @@ function addMedication() {
 function printPrescription() {
     window.print();
 }
-
