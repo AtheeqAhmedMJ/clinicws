@@ -4,7 +4,9 @@ body {
     padding: 0;
     background-color: #ffffff;
 }
-
+#name {
+    font-weight: bold;
+}
 .prescription-container {
     width: 21cm; /* Adjusted width for A4 size */
     margin: 0 auto;
