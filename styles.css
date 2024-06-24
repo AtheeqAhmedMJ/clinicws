@@ -4,11 +4,14 @@ body {
     padding: 0;
     background-color: #ffffff;
 }
+
 #name {
     font-weight: bold;
 }
+
 .prescription-container {
-    width: 21cm; /* Adjusted width for A4 size */
+    width: 100%;
+    max-width: 21cm; /* Adjusted width for A4 size */
     margin: 0 auto;
     padding: 1cm;
     min-height: 28.5cm; /* Setting minimum height to A4 height */
@@ -126,18 +129,30 @@ select {
 }
 
 @media print {
-    .medication-details,
-    .styled-button,
-    .delete-button {
-        display: none;
+    body * {
+        visibility: hidden;
     }
-
+    .prescription-container, .prescription-container * {
+        visibility: visible;
+    }
     .prescription-container {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 210mm; /* A4 width */
+        height: 297mm; /* A4 height */
+        margin: 0;
+        padding: 0;
+        page-break-before: always;
+        overflow: hidden;
         border: none; /* Hide border when printing */
     }
 
+    .medication-details,
+    .styled-button,
+    .delete-button,
     .footer-note {
-        display: none;
+        display: none; /* Hide elements not needed in print */
     }
 }
 
@@ -177,8 +192,7 @@ select {
 
 .medication-inline .medication-box {
     flex: 1;
-    margin-right: 1cm; /* Added
-    /* Adjusted space between type box and search box */
+    margin-right: 1cm; /* Added space between type box and search box */
 }
 
 .medication-inline .medication-box:last-child {
@@ -211,4 +225,34 @@ select {
 footer {
     margin-top: auto;
 }
-
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .prescription-container {
+        padding: 0.5cm;
+    }
+
+    .detail-inline {
+        flex-direction: column;
+    }
+
+    .inline-box,
+    .name-box,
+    .detail-box {
+        flex: 1 1 100%;
+        margin-bottom: 0.3cm;
+    }
+
+    .medication-inline {
+        flex-direction: column;
+    }
+
+    .medication-inline .medication-box {
+        margin-right: 0;
+        margin-bottom: 0.5cm;
+    }
+
+    .footer-note {
+        font-size: 12px;
+    }
+}
