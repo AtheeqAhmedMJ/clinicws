@@ -5,13 +5,8 @@ body {
     background-color: #ffffff;
 }
 
-#name {
-    font-weight: bold;
-}
-
 .prescription-container {
-    width: 100%;
-    max-width: 21cm; /* Adjusted width for A4 size */
+    width: 21cm; /* Adjusted width for A4 size */
     margin: 0 auto;
     padding: 1cm;
     min-height: 28.5cm; /* Setting minimum height to A4 height */
@@ -35,6 +30,9 @@ body {
     height: auto;
     margin-top: 0.1cm;
     margin-bottom: 0.1cm;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .patient-details {
@@ -92,6 +90,11 @@ select {
     color: white;
     border: none;
     border-radius: 18px;
+    transition: transform 0.2s ease-in-out; /* Add transition for smooth scaling */
+}
+
+.styled-button:hover {
+    transform: scale(1.1); /* Enlarge button on hover */
 }
 
 #medications-list {
@@ -126,33 +129,50 @@ select {
     line-height: 25px;
     font-size: 1em;
     display: inline-block;
+    transition: transform 0.2s ease-in-out; /* Add transition for smooth scaling */
+}
+
+.delete-button:hover {
+    transform: scale(1.1); /* Enlarge button on hover */
 }
 
 @media print {
-    body * {
-        visibility: hidden;
+    .medication-details,
+    .styled-button,
+    .delete-button {
+        display: none;
     }
-    .prescription-container, .prescription-container * {
-        visibility: visible;
-    }
+
     .prescription-container {
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 210mm; /* A4 width */
-        height: 297mm; /* A4 height */
-        margin: 0;
-        padding: 0;
-        page-break-before: always;
-        overflow: hidden;
         border: none; /* Hide border when printing */
     }
 
-    .medication-details,
-    .styled-button,
-    .delete-button,
     .footer-note {
-        display: none; /* Hide elements not needed in print */
+        display: none;
+    }
+
+    body, html {
+        height: auto; /* Ensure full height for printing */
+        overflow: visible; /* Ensure all content is visible */
+        display: block;
+    }
+
+    .prescription-container {
+        height: auto; /* Ensure the container height fits the content */
+        overflow: visible; /* Ensure container does not get cut off */
+    }
+
+    /* Prevent any internal scrolling or clipping */
+    .prescription-container {
+        overflow: visible;
+        page-break-inside: avoid;
+        page-break-before: auto;
+        page-break-after: auto;
+    }
+
+    @page {
+        size: A4;
+        margin: 0;
     }
 }
 
@@ -192,7 +212,8 @@ select {
 
 .medication-inline .medication-box {
     flex: 1;
-    margin-right: 1cm; /* Added space between type box and search box */
+    margin-right: 1cm; /* Added */
+    /* Adjusted space between type box and search box */
 }
 
 .medication-inline .medication-box:last-child {
@@ -224,35 +245,4 @@ select {
 
 footer {
     margin-top: auto;
-}
-
-/* Responsive adjustments */
-@media screen and (max-width: 768px) {
-    .prescription-container {
-        padding: 0.5cm;
-    }
-
-    .detail-inline {
-        flex-direction: column;
-    }
-
-    .inline-box,
-    .name-box,
-    .detail-box {
-        flex: 1 1 100%;
-        margin-bottom: 0.3cm;
-    }
-
-    .medication-inline {
-        flex-direction: column;
-    }
-
-    .medication-inline .medication-box {
-        margin-right: 0;
-        margin-bottom: 0.5cm;
-    }
-
-    .footer-note {
-        font-size: 12px;
-    }
 }
