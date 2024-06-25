@@ -112,3 +112,13 @@ function addMedication() {
 function printPrescription() {
     window.print();
 }
+window.onbeforeprint = function() {
+        document.body.style.height = 'auto';
+        document.body.style.overflow = 'visible';
+        document.documentElement.style.height = 'auto';
+        document.documentElement.style.overflow = 'visible';
+        
+        // Scroll to top to ensure full content is captured
+        window.scrollTo(0, 0);
+    };
+
