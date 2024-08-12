@@ -1,0 +1,85 @@
+/* sign-in.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.signin-container {
+    width: 100%;
+    max-width: 500px; /* Responsive width */
+    padding: 2cm;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    margin-bottom: 1cm;
+    color: #14828a;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+button {
+    width: 100%;
+    padding: 0.3cm;
+    margin-bottom: 0.5cm;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+button {
+    cursor: pointer;
+    background-color: #14828a;
+    color: white;
+    border: none;
+    transition: transform 0.2s ease-in-out;
+    margin-top: 0.5cm; /* Adjust spacing between inputs and button */
+}
+
+button:hover {
+    transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .signin-container {
+        padding: 1.5cm;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    button {
+        font-size: 0.9rem;
+    }
+}
+
+@media print {
+    .signin-container {
+        border: none;
+    }
+}
