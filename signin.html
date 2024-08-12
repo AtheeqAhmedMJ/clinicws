@@ -1,4 +1,3 @@
-<!-- signin.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,8 +26,11 @@
             const correctPassword = "Clinic@321"; // Replace with your password
 
             // Get the entered username and password
-            const enteredUsername = document.getElementById('username').value;
-            const enteredPassword = document.getElementById('password').value;
+            const enteredUsername = document.getElementById('username').value.trim();
+            const enteredPassword = document.getElementById('password').value.trim();
+
+            console.log('Entered Username:', enteredUsername); // Debugging log
+            console.log('Entered Password:', enteredPassword); // Debugging log
 
             // Check if the entered credentials match
             if (enteredUsername === correctUsername && enteredPassword === correctPassword) {
