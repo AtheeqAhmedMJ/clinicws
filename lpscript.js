@@ -1,3 +1,12 @@
+ function isMobileDevice() {
+        return /Mobi|Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/.test(navigator.userAgent);
+    }
+
+    if (isMobileDevice()) {
+        document.body.innerHTML = ""; // Clear the page content
+        alert("This website is only accessible via a PC.");
+        window.location.href = "pc-only.html"; // Redirect to a custom page or show an alert
+    }
 document.getElementById('signinForm').addEventListener('submit', function(e) {
     e.preventDefault(); // Prevent form submission
 
