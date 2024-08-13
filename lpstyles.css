@@ -1,0 +1,219 @@
+/* General styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    background-image: url('https://images.pexels.com/photos/5863363/pexels-photo-5863363.jpeg?auto=compress&cs=tinysrgb&w=600'),
+                      url('https://images.pexels.com/photos/5862308/pexels-photo-5862308.jpeg?auto=compress&cs=tinysrgb&w=600'),
+                      url('https://images.pexels.com/photos/3683124/pexels-photo-3683124.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-size: auto auto, auto auto, auto auto; /* Keep images at their original size */
+    background-position: left top, center top, right top; /* Position images for a 3-column effect */
+    background-repeat: no-repeat, no-repeat, no-repeat; /* Prevent repeating of images */
+    background-attachment: fixed; /* Fix the background image in place */
+    height: 100vh; /* Ensure the body takes full height of viewport */
+    width: 100vw; /* Ensure the body takes full width of viewport */
+}
+
+/* Container styles */
+#content-container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrollbars */
+}
+
+#model-container {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    perspective: 1000px; /* Create a 3D effect */
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    transform-style: preserve-3d; /* Ensure 3D transformations */
+    animation: heartbeat 3s ease-in-out infinite; /* Apply heartbeat animation */
+    margin-top: 10%;
+}
+
+/* Smooth heartbeat animation */
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1.4) rotate(-10deg);
+    }
+    50% {
+        transform: scale(1.6) rotate(-10deg);
+    }
+}
+
+/* Box styles (including sign-in box) */
+.box {
+    width: 40%;
+    height: auto;
+    padding: 2rem;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.8); /* Reduced opacity */
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px; /* Rounded edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10%;
+}
+
+/* Sign-in container specific styles */
+/* Sign-in container */
+#signin-container {
+    width: 40%;
+    height: auto;
+    padding: 2rem;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.8); /* Reduced opacity */
+    border-left: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px; /* Rounded edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10%;
+}
+
+
+/* Header styles */
+header {
+    position: absolute;
+    top: 0;
+    left: 0; /* Align header to the left */
+    width: calc(100% - 0.2cm); /* Reduce width by 1.5 cm to move the buttons */
+    display: flex;
+    justify-content: flex-start; /* Align items to the start */
+    align-items: center;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1.7rem;
+    background: linear-gradient(45deg, #00796b, #8bc34a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    margin-right: auto; /* Pushes the nav to the right */
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    margin-left: 1.5cm; /* Move navigation items 1.5 cm to the left */
+}
+
+nav a {
+    color: #00796b;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 2px solid #00796b;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem; /* Smaller font size for buttons */
+}
+
+nav a:hover {
+    background: linear-gradient(45deg, #00796b, #8bc34a);
+    border-color: transparent;
+    color: #fff;
+}
+
+/* Form styles */
+input[type="text"],
+input[type="password"],
+button {
+    width: 100%;
+    padding: 0.3cm;
+    margin-bottom: 0.5cm;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Curved edges */
+    font-size: 1rem;
+}
+
+button {
+    cursor: pointer;
+    background-color: #14828a;
+    color: white;
+    border: none;
+    transition: transform 0.2s ease-in-out;
+    margin-top: 0.5cm;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Section styles */
+section {
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.8); /* Consistent box design */
+    border: 1px solid #ddd;
+    border-radius: 15px; /* Consistent rounded edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    max-width: 80%;
+    text-align: center;
+}
+
+/* Section heading styles */
+section h2 {
+    color: #14828a;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+section p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #model-container, #signin-container {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    
+    iframe {
+        transform: none; /* Reset rotation */
+        animation: heartbeat 3s ease-in-out infinite; /* Ensure animation is applied on mobile */
+    }
+    
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    nav a {
+        font-size: 0.8rem; /* Smaller font size on mobile */
+        padding: 8px;
+    }
+}
